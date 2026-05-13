@@ -10,7 +10,7 @@ class CinemaHall:
             self,
             movie: str,
             customers: list[Customer],
-            cleaning_stuff: Cleaner
+            cleaning_staff: Cleaner
     ) -> None:
         print(f'\"{movie}\" started in hall number {self.number}.')
 
@@ -19,4 +19,4 @@ class CinemaHall:
 
         print(f'\"{movie}\" ended.')
 
-        cleaning_stuff.clean_hall(hall_number=self.number)
+        cleaning_staff.clean_hall(hall_number=self.number)
